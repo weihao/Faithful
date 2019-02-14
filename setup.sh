@@ -79,6 +79,7 @@ brew install git-flow
 brew install git-extras
 brew install speedtest_cli
 brew install ssh-copy-id
+brew install htop
 brew install tree
 brew install heroku/brew/heroku
 heroku update
