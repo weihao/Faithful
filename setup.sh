@@ -3,6 +3,23 @@
 # Ask for the administrator password upfront.
 sudo -v
 
+# Always Show Hidden Files in the Finder
+defaults write com.apple.finder AppleShowAllFiles -bool YES
+# Show file extensions in the Finder
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+# Use plain text as default format in TextEdit
+defaults write com.apple.TextEdit RichText -int 0
+# Speed up by disabling animations.
+defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
+defaults write -g QLPanelAnimationDuration -float 0
+defaults write com.apple.finder DisableAllAnimations -bool true
+defaults write com.apple.dock launchanim -bool false
+defaults write com.apple.dock expose-animation-duration -float 0.1
+defaults write com.apple.Dock autohide-delay -float 0
+
+
+killall Finder
+
 # Keep-alive: update existing `sudo` time stamp until the script has finished.
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 if test ! $(which brew); then
@@ -70,6 +87,7 @@ brew cask install --appdir="/Applications" microsoft-office
 brew cask install --appdir="/Applications" luyten
 brew cask install --appdir="/Applications" teamviewer
 brew cask install --appdir="/Applications" postman
+brew cask install --appdir="/Applications" github
 brew cask install --appdir="/Applications" mas
 
 mas lucky Trello
