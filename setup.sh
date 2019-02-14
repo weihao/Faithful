@@ -87,7 +87,7 @@ brew install mongo
 brew install redis
 brew install elasticsearch
 brew install caskroom/cask/brew-cask
-brew cask install --appdir="~/Applications" java8
+brew cask install --appdir="~/Applications" caskroom/versions/java8
 brew cask install --appdir="/Applications" virtualbox
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" slack
