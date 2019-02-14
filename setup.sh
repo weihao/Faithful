@@ -3,23 +3,35 @@
 # Ask for the administrator password upfront.
 sudo -v
 
-# Always Show Hidden Files in the Finder
+# Always Show hidden files in the Finder
 defaults write com.apple.finder AppleShowAllFiles -bool YES
 # Show file extensions in the Finder
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 # Use plain text as default format in TextEdit
 defaults write com.apple.TextEdit RichText -int 0
-# Speed up by disabling animations.
+# Show battery percentage
+defaults write com.apple.menuextra.battery ShowPercent YES
+# Require password immediately after sleep or screen saver begins
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+# Set the icon size of Dock items to 36 pixels
+defaults write com.apple.dock tilesize -int 36
+# Speed up by disabling animations
 defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
-defaults write -g QLPanelAnimationDuration -float 0
+defaults write QLPanelAnimationDuration -float 0
+defaults write NSWindowResizeTime -float 0.001
 defaults write com.apple.finder DisableAllAnimations -bool true
 defaults write com.apple.dock launchanim -bool false
 defaults write com.apple.dock expose-animation-duration -float 0.1
 defaults write com.apple.Dock autohide-delay -float 0
 
+# Disable the sound effects on boot
+nvram SystemAudioVolume=" "
 
-killall Finder
-
+for app in "Activity Monitor" "Dock" "Finder" "SizeUp" "Spectacle" "SystemUIServer" \
+    "Transmission"; do
+    killall "${app}" > /dev/null 2>&1
+done
 # Keep-alive: update existing `sudo` time stamp until the script has finished.
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 if test ! $(which brew); then
