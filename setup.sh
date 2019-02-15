@@ -24,6 +24,15 @@ defaults write com.apple.finder DisableAllAnimations -bool true
 defaults write com.apple.dock launchanim -bool false
 defaults write com.apple.dock expose-animation-duration -float 0.1
 defaults write com.apple.Dock autohide-delay -float 0
+# Disable sound effects when changing volume
+defaults write NSGlobalDomain com.apple.sound.beep.feedback -int 0
+# Disable sounds effects for user interface changes
+defaults write NSGlobalDomain com.apple.sound.uiaudio.enabled -int 0
+# Set alert volume to 0
+defaults write NSGlobalDomain com.apple.sound.beep.volume -float 0.0
+
+open '/System/Library/CoreServices/Menu Extras/Volume.menu'
+open '/System/Library/CoreServices/Menu Extras/Bluetooth.menu'
 
 # Disable the sound effects on boot
 nvram SystemAudioVolume=" "
