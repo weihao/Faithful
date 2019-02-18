@@ -107,6 +107,7 @@ brew cask install --appdir="/Applications" clion
 brew cask install --appdir="/Applications" visual-studio-code
 brew cask install --appdir="/Applications" microsoft-office
 brew cask install --appdir="/Applications" luyten
+brew cask install --appdir="/Applications" spectacle
 brew cask install --appdir="/Applications" teamviewer
 brew cask install --appdir="/Applications" postman
 brew cask install --appdir="/Applications" github
