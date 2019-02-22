@@ -90,6 +90,7 @@ brew install speedtest_cli
 brew install ssh-copy-id
 brew install htop
 brew install tree
+brew install wget
 brew install heroku/brew/heroku
 heroku update
 brew install mysql
