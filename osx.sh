@@ -113,6 +113,7 @@ brew cask install --appdir="/Applications" teamviewer
 brew cask install --appdir="/Applications" postman
 brew cask install --appdir="/Applications" github
 brew cask install --appdir="/Applications" mas
+brew cask install --appdir="/Applications" wireshark
 
 mas lucky Trello
 mas lucky WeatherBug
