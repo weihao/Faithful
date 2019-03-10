@@ -5,6 +5,7 @@ sudo apt-get install \
     gnupg2 \
     software-properties-common
 
+sudo apt-get install iptables
 sudo apt-get install git
 sudo apt-get install -y python3-pip
 
