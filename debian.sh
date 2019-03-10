@@ -8,6 +8,8 @@ sudo apt-get install \
 sudo apt-get install git
 sudo apt-get install -y python3-pip
 
+sudo curl -sL https://deb.nodesource.com/setup_10.x | bash -
+sudo apt-get install -y nodejs
 
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 sudo apt-key fingerprint 0EBFCD88
