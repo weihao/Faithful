@@ -5,6 +5,8 @@ sudo apt-get install \
     gnupg2 \
     software-properties-common
 
+sudo apt-get install git
+
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 sudo apt-key fingerprint 0EBFCD88
 sudo add-apt-repository \
