@@ -6,6 +6,8 @@ sudo apt-get install \
     software-properties-common
 
 sudo apt-get install git
+sudo apt-get install -y python3-pip
+
 
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 sudo apt-key fingerprint 0EBFCD88
