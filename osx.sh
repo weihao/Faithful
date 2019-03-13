@@ -115,6 +115,7 @@ brew cask install --appdir="/Applications" github
 brew cask install --appdir="/Applications" mas
 brew cask install --appdir="/Applications" wireshark
 brew cask install --appdir="/Applications" zoomus
+brew cask install --appdir="/Applications" qq
 
 mas lucky Trello
 mas lucky WeatherBug
