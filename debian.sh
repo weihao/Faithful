@@ -1,9 +1,9 @@
-sudo add-apt-repository contrib
-sudo add-apt-repository non-free
-sudo apt-get update
+#sudo add-apt-repository contrib
+#sudo add-apt-repository non-free
+#sudo apt-get update
 
 # nvidia
-sudo apt -y install nvidia-driver
+#sudo apt -y install nvidia-driver
 
 
 sudo apt-get -y install \
@@ -13,7 +13,6 @@ sudo apt-get -y install \
     curl \
     gnupg2 \
     software-properties-common \
-    iptables \
     git \
     python3 \
     python3-pip \
@@ -26,7 +25,7 @@ sudo apt-get -y install \
     xrdp \
     htop \
     vagrant \
-    
+    #iptables \
 
 
 
@@ -53,9 +52,9 @@ sudo apt-get -y install \
     containerd.io \
 
 # virtualbox
-wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+#wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 
-echo "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian bionic contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
+#echo "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian bionic contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
 
-sudo apt update
-sudo apt -y install virtualbox-6.0
+#sudo apt update
+#sudo apt -y install virtualbox-6.0
