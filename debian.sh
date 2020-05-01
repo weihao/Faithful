@@ -22,11 +22,10 @@ sudo apt-get -y install \
     lshw \
     npm \
     sysvinit-utils \
-    xrdp \
     htop \
     vagrant \
     #iptables \
-
+    #xrdp \
 
 
 # yarn
