@@ -20,16 +20,11 @@ sudo apt-get -y install \
     default-jdk \
     maven \
     lshw \
-    npm \
     sysvinit-utils \
     htop \
     vagrant \
     #iptables \
     #xrdp \
-
-
-# yarn
-npm install -g yarn
 
 # nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
@@ -39,6 +34,9 @@ export NVM_DIR="$HOME/.nvm"
 
 source ~/.bashrc && nvm install 12
 source ~/.bashrc && nvm use 12
+
+# yarn
+npm install -g yarn
 
 # docker
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
