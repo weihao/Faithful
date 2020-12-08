@@ -22,7 +22,7 @@ sudo apt-get -y install \
     lshw \
     sysvinit-utils \
     htop \
-    vagrant \
+    vagrant
     #iptables \
     #xrdp \
 
